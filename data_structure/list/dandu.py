@@ -20,5 +20,3 @@ def is_int(val):
 ivals = list(filter(is_int,values))
 print(ivals)
 
-# 知识点 try except
-# filter
