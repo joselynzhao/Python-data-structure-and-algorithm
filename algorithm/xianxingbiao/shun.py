@@ -28,6 +28,10 @@ class SeqList(object):
         else:
             return IndexError
     def __setitem__(self, key, value):
-        if not isinstance(key,int): w
-            pass
+        if not isinstance(key,int):
+            raise TypeError
+        if 0<=key <self.num:
+            self.date[key] = value
+        else:
+            raise IndexError
 
