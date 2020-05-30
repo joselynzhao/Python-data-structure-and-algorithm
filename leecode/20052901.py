@@ -30,6 +30,26 @@ class Solution:
                 max_len = current_len
         print(max_len)
 
+
+    def lenthOfLongestSubstring02(self,s):
+        if len(s)==0:
+            return 0
+        max_len = 1
+        point_1 = 0
+        point_2 = 1
+        box = [s[point_1]]
+        current = point_1+1
+        while(point_1!=len(s)):
+            if s[current] not in box:
+                box.append(s[current])
+                point_2 += 1
+            else:
+                index = box.index(s[current])
+
+
+
+
+
 s = Solution('abcabcbb')
 
 
